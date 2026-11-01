@@ -49,7 +49,6 @@ The mod does this by forcing the driver to use a notification timer of 20ms
 11. Locate and double click the appropriate driver INF file:
     - **Windows XP:** `wdma_ens.inf`
     - **Windows Server 2003:** `vmaudio.inf`
-
 14. Click **"OK"**
 15. Click **"Next"**
 16. Windows will say that the device has not passed Windows Logo testing, click **"Continue Anyway"**
