@@ -1,5 +1,5 @@
-# ES1371-VMware-Fix
-This modified ES1371 driver reduces the chances of hearing popping/crackling on Windows 2000/XP when installed in VMware without requiring the user to modify their host registry to enable GlobalTimerResolutionRequests. 
+# VMware Audio Fixes
+This repo cotains modified audio drivers to reduce the chances of hearing popping/crackling on versions of Windows that use the NT 5.x kernel when installed in VMware without requiring the user to modify their host registry to enable GlobalTimerResolutionRequests. 
 
 The mod does this by forcing the driver to use a notification timer of 20ms
 
@@ -12,6 +12,7 @@ The mod does this by forcing the driver to use a notification timer of 20ms
 |Windows XP Service Pack 1|❓
 |Windows XP Service Pack 2|❓
 |Windows XP Service Pack 3|✅
+|Windows Server 2003 Service Pack 2|✅
 
 ## Installation
 
@@ -33,7 +34,7 @@ The mod does this by forcing the driver to use a notification timer of 20ms
 16. Click close
 17. Reboot your machine
     
-### Windows XP
+### Windows XP / Server 2003
 
 1. Right click **"My Computer"** and click manage
 2. Click **"Device Manager"**
@@ -45,10 +46,13 @@ The mod does this by forcing the driver to use a notification timer of 20ms
 8. Click **"Don't search"**
 9. Click **"Has Disk..."**
 10. Click **"Browse"**
-11. Locate **"wdma_ens.inf"** and double click on the file
-12. Click **"OK"**
-13. Click **"Next"**
-14. Windows will say that the device has not passed Windows Logo testing, click **"Continue Anyway"**
-15. Click finish
-16. Click close
-17. Reboot your machine
+11. Locate and double click the appropriate driver INF file:
+    - **Windows XP:** `wdma_ens.inf`
+    - **Windows Server 2003:** `vmaudio.inf`
+
+14. Click **"OK"**
+15. Click **"Next"**
+16. Windows will say that the device has not passed Windows Logo testing, click **"Continue Anyway"**
+17. Click finish
+18. Click close
+19. Reboot your machine
