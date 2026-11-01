@@ -38,15 +38,17 @@ The mod does this by forcing the driver to use a notification timer of 20ms
 
 1. Right click **"My Computer"** and click manage
 2. Click **"Device Manager"**
-3. Expand **"Sound, video and game controllers"** and double click on **"Creative AudioPCI (ES1371,ES1373) (WDM)"**
-4. Click the Driver tab
-5. Click **"Update Driver"**
-6. Click **"No, not this time"** when asked if Windows can connect to Windows Update
-7. Click **"Install from a list or specific location"**
-8. Click **"Don't search"**
-9. Click **"Has Disk..."**
-10. Click **"Browse"**
-11. Locate and double click the appropriate driver INF file:
+3. Expand **"Sound, video and game controllers"** and double click on...:
+    - **Windows XP:** "Creative AudioPCI (ES1371,ES1373) (WDM)"
+    - **Windows Server 2003:** "VMware VMaudio (VMAUDIO) (WDM)"
+5. Click the Driver tab
+6. Click **"Update Driver"**
+7. Click **"No, not this time"** when asked if Windows can connect to Windows Update
+8. Click **"Install from a list or specific location"**
+9. Click **"Don't search"**
+10. Click **"Has Disk..."**
+11. Click **"Browse"**
+12. Locate and double click the appropriate driver INF file:
     - **Windows XP:** `wdma_ens.inf`
     - **Windows Server 2003:** `vmaudio.inf`
 14. Click **"OK"**
